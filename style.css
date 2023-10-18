@@ -1,0 +1,121 @@
+/* Estilos generales */
+header {
+    background: linear-gradient(to right,  #39353b, #545156); /* Degradado horizontal de rojo a verde */
+    color: #38343b; /* Texto negro */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+#logo {
+    border-radius: 5%; /* Establece el radio de las esquinas al 50% para que se vean redondas */
+    width: 200px; /* Establece el ancho en 200 píxeles */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+main {
+    margin-top: 200px; /* Ajustar según la altura del encabezado */
+    padding: 20px;
+}
+/* funcionamiento básico del sistema de pestañas */
+.tab-content {
+  display: none;
+}
+
+.tab:target .tab-content, .tab:last-of-type .tab-content {
+  display: block;
+}
+
+.tab:target ~ .tab:last-of-type .tab-content {
+  display: none;
+}
+/* parámetros para configurar las pestañas */
+:root {
+  --tabs-border-color: #ABCDEF;
+  --tabs-border-size: 0px;
+  --tabs-text-color: #f33535;
+  --tabs-dark-color: #39353b;
+  --tabs-lite-color: #545156;
+  --tabs-width: 120px;
+  --tabs-height: 40px;
+}
+
+/* aspecto básico */
+body {
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.2;
+  background:linear-gradient(to right,  #39353b, #545156); /* Degradado horizontal de rojo a verde */
+}
+h2, p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.tabs * {
+  box-sizing: border-box;
+}
+/* esto es para posicionar las pestañas correctamente */
+.tab-container {
+  position: relative;
+  padding-top: var(--tabs-height); /* en esta zona colocaremos las pestañas */
+}
+#tab1>a { --tabs-position: 0; }
+#tab2>a { --tabs-position: 1; }
+#tab3>a { --tabs-position: 2; }
+#tab4>a { --tabs-position: 3; }
+#tab5>a { --tabs-position: 4; }
+#tab6>a { --tabs-position: 5; }
+#tab7>a { --tabs-position: 6; }
+#tab8>a { --tabs-position: 7; }
+#tab9>a { --tabs-position: 8; }
+.tab>a {
+  text-align: center;
+  position: absolute;
+  width: calc(var(--tabs-width));
+  height: calc(var(--tabs-height) + var(--tabs-border-size));
+  top: 0;
+  left: calc(var(--tabs-width) * var(--tabs-position)); /* posición de cada pestaña */
+}
+
+/* más aspecto */
+.tabs {
+  padding: 10px;
+  color: var(--tabs-text-color);
+}
+.tab-content {
+  background-color: var(--tabs-lite-color);
+  padding: 20px;
+  border: var(--tabs-border-size) solid var(--tabs-border-color);
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  z-index: 100;
+}
+.tab>a {
+  background-color: var(--tabs-dark-color);
+  padding: 10px;
+  border: var(--tabs-border-size) solid var(--tabs-border-color);
+  border-radius: 10px 10px 0 0;
+  border-bottom: 0;
+}
+.tab:target>a, .tab:last-of-type>a {
+  background-color: var(--tabs-lite-color);
+  z-index: 200;
+}
+.tab:target ~ .tab:last-of-type>a {
+  background-color: var(--tabs-dark-color);
+  z-index: 0;
+}
+
+#tab1 .tab-content {
+    text-align: center; /* Centra el texto */
+    max-width: 100%; /* Establece un ancho máximo para que las líneas de texto sean más cortas */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    font-size: 40px; /* Tamaño de letra mayor */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial o a la fuente que desees */
+}
+
+#tab1 .tab-content p {
+    font-family: 'cursive', sans-serif; /* Cambia la fuente del párrafo a una fuente más dinámica o deportiva */
+}
