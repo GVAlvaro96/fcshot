@@ -3,61 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style.css">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
     </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=AeEtgyRDQ5cwayapcv-hJr50E6fusOA3q_JaM5Xk5Xs3tJfMW2lMG3SRvFMmJTJoRb3uAYbMOONMsNlQ&currency=EUR"></script>
+    <script>
+        function ocultarContenido() {
+            document.getElementById('contenido').style.display = 'none';
+        }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1741293098742722"
+     crossorigin="anonymous"></script>
     <title>FCShot</title>
 </head>
-<body>
-    <header>
-        <img src="img/logo.png" id="logo">
+<body onload="ocultarContenido()">
+    <header class="separator">
+        <img src="img/logo.png" id="logo" alt="Logo de FCShot">
+        <a href="#comprar"><button class="button_header" >Comprar</button></a>
     </header>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7894973711778615"
-         crossorigin="anonymous"></script>
-    <!-- Anuncios principales -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-7894973711778615"
-         data-ad-slot="5033684927"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
     <main>
-        <div class="tabs">
-          <div class="tab-container">
-            <div id="tab3" class="tab">
-              <a href="#tab3">Galería</a>
-              <div class="tab-content">
-                <h2>Galería</h2>
-                <p>Lorem ipsum ...</p>
-              </div>
-            </div>
-            <div id="tab2" class="tab">
-              <a href="#tab2">Shop</a>
-              <div class="tab-content">
-                <h2>Shop</h2>
-                <p>
-                <a href="https://drive.google.com/uc?export=download&id=15_XsYPCK7XQIzgPggxzxsUg_ryD8hate" download="build.zip">
-                    <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Descargar ZIP</button>
-                </a>
-                </p>
-              </div>
-            </div>
-            <div id="tab1" class="tab">
-                <a href="#tab1">Inicio</a>
-                <div class="tab-content">
-                    <h2>¿Que es FCShot?</h2>
-                    <p>Bienvenido a nuestra Aplicación FCShot! Descubre la herramienta definitiva para los apasionados jugadores de FIFA<br>  que desean mejorar su plantilla con facilidad.Nuestra aplicación simplifica el proceso de adquirir cartas FUT,<br> haciendo que el comercio y las compras sean pan comido. Di adiós a las búsquedas manuales y a la espera;<br> nuestra innovadora solución automatiza las transacciones de cartas, ayudándote a construir el equipo de tus sueños.<br> ¡Explora el futuro del comercio de FIFA con nuestra aplicación fácil de usar y eleva tu experiencia de juego hoy mismo!</p>
+ 
+        <div class="mensaje-principal">
+            <h2>¿Qué es FCShot?</h2>
+            <p class="description-app">Bienvenido a nuestra aplicación FCShot. Descubre la herramienta definitiva para los apasionados jugadores de FIFA que desean mejorar su plantilla con facilidad. Nuestra aplicación simplifica el proceso de adquirir cartas FUT, haciendo que el comercio y las compras sean sencillas. Di adiós a las búsquedas manuales y a la espera; nuestra innovadora solución automatiza las transacciones de cartas, ayudándote a construir el equipo de tus sueños. ¡Explora el futuro del comercio de FIFA con nuestra aplicación fácil de usar y eleva tu experiencia de juego hoy mismo!</p>
+        </div>
+
+        <div class="como_funciona">
+            <h2>¿Cómo funciona?</h2>
+            <div class="step">
+                <div class="step-img">
+                    <img src="img/primer_paso.PNG">
+                </div>
+                <div class="step-text">
+                    <h3>Primer paso:</h3>
+                    <p>Ejecuta la aplicación FCShot y se abrirá una tinterfaz con los recuadros que se ven en la imagen, donde tendras que introducir el nombre del jugador, en caso de que se busque un jugador en concreto, o si la busqueda es para jugadores que cumplan X caracterísitcas dejar ese campo vacío. Tambien se deben de rellenar los campos siguientes indicando el ranfgo de precio de busqueda y el intervalo por el cual se va a incrementar el precio para llegar de un precio incial al precio final.</p>
                 </div>
             </div>
-          </div>
+            <div class="step" >
+                <div class="step-content">
+                    <h3>Segundo paso:</h3>
+                    <div class="step-img">
+                        <img src="img/sig_in.PNG" width="420px" height="450px">
+                        <img src="img/registro.PNG" width="420px" height="450px">
+                    </div>
+                    <div class="step-text">
+                        <p>Una pulsado el boton de buscar jugador se abrirá dos pantallas. Una es un registro donde se indicara en que paso de la aplicación te encuentras y la otra pantalla es la pagina oficial del FC 24, tendras que seguir los pasos de la aplicación y los que te indica el registro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <h3>Tercer paso:</h3>
+                    <div class="step-img">
+                        <img src="img/ter_paso.PNG" width="840px" height="450px">
+                    </div>
+                    <div class="step-text">
+                        <p>Hata que no lo indique el registro no se puede pulsar el botón logi. Una vez pulsado la aplicación se ira directamente a la pantalla de los filtros de mercado de transferibles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <h3>Cuarto paso:</h3>
+                    <div class="step-img">
+                            <img src="img/filtros.PNG" width="420px" height="450px">
+                            <img src="img/cuenta_atras.PNG" width="420px" height="450px">
+                    </div>
+                    <div class="step-text">
+                        <a id="comprar"></a>
+                        <p>Por ultimo tienes 30 segundos para añadir los filtros que quieras y esperar a que empiece la busqueda, una vez inroducidos los filtros no tendras que hacer nada mas, para parar la busqueda cierra la ventana de la web app de FC 24, MUCHA SUERTE !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="img/ronaldo.png" class="sliding-image" alt="Imagen de Ronaldo">
+            <div class="text-container">
+                <h2>Comprar FCShot</h2>
+                <br>
+                <div class="description-buy" >
+                    <h3>Compra ya por 12.99€ la aplicación y empieza a ganar monedas!</h3>
+                    <div id ="paypal-button-conteiner" >
+
+                    </div>
+                    <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'pill',
+                                label: 'pay',
+
+
+                            },
+                            createOrder: function(data, actions) {
+                                return actions.order.create({
+                                    purchase_units: [{
+                                        amount: {
+                                            value: '12.99' // Cambié 12 a '12.00' para que sea un número válido
+                                        }
+                                    }]
+                                });
+                            },
+                            onApprove: function(data, actions){
+                                actions.order.capture().then(function(detalles){
+                                    console.log(detalles);
+                                    alert("Pago realizado");
+                                    // Muestra el contenido después de la aprobación del pago
+                                    document.getElementById('contenido').style.display = 'block';
+                                });
+                            },
+                            onCancel: function(data) {
+                                alert("Pago cancelado");
+                                console.log(data);
+                            }
+                        }).render('#paypal-button-conteiner');
+                    </script>
+                    <p>Pago con PayPal</p>
+                    <div id="contenido" class="contenido_oculto">
+                        <!-- El contenido de tu página que deseas mostrar después de la aprobación del pago -->
+
+                        <a  href="https://drive.google.com/uc?export=download&id=1NRIVklbksV09RG8ZWqwiotA_k8qT__MB" download="FCShot.zip"><button class="button_header">Descargar</button></a>
+                        <p>No recargar la página hasta terminar la descarga. La descarga puede tardar unos segundos en inciar.</p>
+                    </div>
+                    <p id="mensaje">Si hay apoyo a la aplicación, se lanzará una versión mejorada en desarrollo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-webs">
+            <p style="color:white;"> Contacto:<br> fcshot96@gmail.com </p>
+            <a href="https://www.instagram.com/fcsho_t/"> <img src="img/logo_insta.png" width="80" height="70" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@fcshot1"><img src="img/logo_tiktok.png" width="80" height="70" alt="TikTok"> </a>
         </div>
     </main>
     <script src="src/web/swiper-master/src/swiper-bundle.mjs"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
